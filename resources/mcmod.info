@@ -1,0 +1,12 @@
+[
+{
+  "modid": "unitygear",
+  "name": "Unity Gear",
+  "description": "Hexxit Gear port for 1.10",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/triplegerms/unitygear",
+  "authors": [ "triplegerms" ],
+  "credits": ""
+}
+]
