@@ -10,8 +10,11 @@ import net.triplegerms.unitygear.lib.Names;
 
 public class ItemUnityEssence extends Item {
 
-	public ItemUnityEssence() {
+	public ItemUnityEssence(String name) {
 		setCreativeTab(UnityGear.tabGear);
+		setUnlocalizedName(Names.unlocal(name));
+		setRegistryName(name);
+		GameRegistry.register(this);
 	}
 	
 	public void addRecipes(){

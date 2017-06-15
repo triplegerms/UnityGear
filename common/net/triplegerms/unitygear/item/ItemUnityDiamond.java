@@ -9,21 +9,21 @@ import net.triplegerms.unitygear.init.ModItems;
 import net.triplegerms.unitygear.lib.Names;
 
 public class ItemUnityDiamond extends Item {
-	
-	public ItemUnityDiamond()
-	{
-		setMaxStackSize(64);
+
+	public ItemUnityDiamond(String name) {
 		setCreativeTab(UnityGear.tabGear);
+		setUnlocalizedName(Names.unlocal(name));
+		setRegistryName(name);
+		GameRegistry.register(this);
 	}
-	
-	public void addRecipes()
-	{
-		GameRegistry.addShapelessRecipe(new ItemStack(this), Items.DIAMOND, ModItems.uEssence);
+
+	public void addRecipes() {
+		GameRegistry.addShapelessRecipe(new ItemStack(this), Items.DIAMOND,
+				ModItems.uEssence);
 	}
-	
+
 	@Override
-	public String getUnlocalizedName(ItemStack stack)
-	{
+	public String getUnlocalizedName(ItemStack stack) {
 		return "item." + UnityGear.RESOURCE_PREFIX + Names.UNITY_DIAMOND_ITEM;
 	}
 
