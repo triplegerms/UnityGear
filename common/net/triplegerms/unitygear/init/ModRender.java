@@ -13,7 +13,11 @@ public class ModRender {
 	public static void preInit(ItemModelMesher mesher){
 		registerItemRenderer(ModItems.uEssence, 0, Names.resName(Names.ESSENCE_ITEM), mesher);
 		registerItemRenderer(ModItems.uDiamond, 0, Names.resName(Names.UNITY_DIAMOND_ITEM), mesher);
-		registerItemRenderer(ModItems.tArmor, 0, Names.resName(Names.SCALE_CHEST_ITEM), mesher);
+		//registerItemRenderer(ModItems.tArmor, 0, Names.resName(Names.SCALE_CHEST_ITEM), mesher);
+		registerItemRenderer(ModItems.scaleBoot, 0, Names.resName(Names.SCALE_BOOT_ITEM), mesher);
+		registerItemRenderer(ModItems.scaleLeg, 0, Names.resName(Names.SCALE_LEG_ITEM), mesher);
+		registerItemRenderer(ModItems.scaleChest, 0, Names.resName(Names.SCALE_CHEST_ITEM), mesher);
+		registerItemRenderer(ModItems.scaleHelm, 0, Names.resName(Names.SCALE_HELM_ITEM), mesher);
 	}
 	
 	public static void init(){
