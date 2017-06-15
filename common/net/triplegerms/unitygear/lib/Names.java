@@ -12,6 +12,16 @@ public class Names {
 	public static final String SCALE_CHEST_ITEM = "scale_chest_item";
 	public static final String SCALE_HELM_ITEM = "scale_helm_item";
 	
+	public static final String THIEF_BOOT_ITEM = "thief_boot_item";
+	public static final String THIEF_LEG_ITEM = "thief_leg_item";
+	public static final String THIEF_CHEST_ITEM = "thief_chest_item";
+	public static final String THIEF_HELM_ITEM = "thief_helm_item";
+	
+	public static final String TRIBAL_BOOT_ITEM = "tribal_boot_item";
+	public static final String TRIBAL_LEG_ITEM = "tribal_leg_item";
+	public static final String TRIBAL_CHEST_ITEM = "tribal_chest_item";
+	public static final String TRIBAL_HELM_ITEM = "tribal_helm_item";
+	
 	public static final String THIEF_ARMOR = "thief_armor";
 	public static final String TRIBAL_ARMOR = "tribal_armor";
 	public static final String SCALE_ARMOR = "scale_armor";

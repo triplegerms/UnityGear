@@ -23,6 +23,14 @@ public class ModItems {
 	public static Item scaleLeg;
 	public static Item scaleChest;
 	public static Item scaleHelm;
+	public static Item thiefBoot;
+	public static Item thiefLeg;
+	public static Item thiefChest;
+	public static Item thiefHelm;
+	public static Item tribalBoot;
+	public static Item tribalLeg;
+	public static Item tribalChest;
+	public static Item tribalHelm;
 	
 
 	public static void init() {
@@ -34,6 +42,14 @@ public class ModItems {
 		scaleLeg = new ArmorBase(Names.SCALE_LEG_ITEM, ArmorType.armorScale, EntityEquipmentSlot.LEGS);
 		scaleChest = new ArmorBase(Names.SCALE_CHEST_ITEM, ArmorType.armorScale, EntityEquipmentSlot.CHEST);
 		scaleHelm = new ArmorBase(Names.SCALE_HELM_ITEM, ArmorType.armorScale, EntityEquipmentSlot.HEAD);
+		thiefBoot = new ArmorBase(Names.THIEF_BOOT_ITEM, ArmorType.armorThief, EntityEquipmentSlot.FEET);
+		thiefLeg = new ArmorBase(Names.THIEF_LEG_ITEM, ArmorType.armorThief, EntityEquipmentSlot.LEGS);
+		thiefChest = new ArmorBase(Names.THIEF_CHEST_ITEM, ArmorType.armorThief, EntityEquipmentSlot.CHEST);
+		thiefHelm = new ArmorBase(Names.THIEF_HELM_ITEM, ArmorType.armorThief, EntityEquipmentSlot.HEAD);
+		tribalBoot = new ArmorBase(Names.TRIBAL_BOOT_ITEM, ArmorType.armorTribal, EntityEquipmentSlot.FEET);
+		tribalLeg = new ArmorBase(Names.TRIBAL_LEG_ITEM, ArmorType.armorTribal, EntityEquipmentSlot.LEGS);
+		tribalChest = new ArmorBase(Names.TRIBAL_CHEST_ITEM, ArmorType.armorTribal, EntityEquipmentSlot.CHEST);
+		tribalHelm = new ArmorBase(Names.TRIBAL_HELM_ITEM, ArmorType.armorTribal, EntityEquipmentSlot.HEAD);
 
 	}
 

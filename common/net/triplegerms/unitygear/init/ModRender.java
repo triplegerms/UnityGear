@@ -13,11 +13,20 @@ public class ModRender {
 	public static void preInit(ItemModelMesher mesher){
 		registerItemRenderer(ModItems.uEssence, 0, Names.resName(Names.ESSENCE_ITEM), mesher);
 		registerItemRenderer(ModItems.uDiamond, 0, Names.resName(Names.UNITY_DIAMOND_ITEM), mesher);
-		//registerItemRenderer(ModItems.tArmor, 0, Names.resName(Names.SCALE_CHEST_ITEM), mesher);
+
 		registerItemRenderer(ModItems.scaleBoot, 0, Names.resName(Names.SCALE_BOOT_ITEM), mesher);
 		registerItemRenderer(ModItems.scaleLeg, 0, Names.resName(Names.SCALE_LEG_ITEM), mesher);
 		registerItemRenderer(ModItems.scaleChest, 0, Names.resName(Names.SCALE_CHEST_ITEM), mesher);
 		registerItemRenderer(ModItems.scaleHelm, 0, Names.resName(Names.SCALE_HELM_ITEM), mesher);
+		registerItemRenderer(ModItems.thiefBoot, 0, Names.resName(Names.THIEF_BOOT_ITEM), mesher);
+		registerItemRenderer(ModItems.thiefLeg, 0, Names.resName(Names.THIEF_LEG_ITEM), mesher);
+		registerItemRenderer(ModItems.thiefChest, 0, Names.resName(Names.THIEF_CHEST_ITEM), mesher);
+		registerItemRenderer(ModItems.thiefHelm, 0, Names.resName(Names.THIEF_HELM_ITEM), mesher);
+		registerItemRenderer(ModItems.tribalBoot, 0, Names.resName(Names.TRIBAL_BOOT_ITEM), mesher);
+		registerItemRenderer(ModItems.tribalLeg, 0, Names.resName(Names.TRIBAL_LEG_ITEM), mesher);
+		registerItemRenderer(ModItems.tribalChest, 0, Names.resName(Names.TRIBAL_CHEST_ITEM), mesher);
+		registerItemRenderer(ModItems.tribalHelm, 0, Names.resName(Names.TRIBAL_HELM_ITEM), mesher);
+		
 	}
 	
 	public static void init(){

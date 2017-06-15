@@ -1,6 +1,17 @@
 item.unitygear:essence_item.name=Unity Essence
 item.unitygear:unitydiamond_item.name=Unity Diamond
-item.unitygear:scale_chest_item.name=whhhheheh
-item.unitygear:scale_boot_item.name=too big
+
+item.unitygear:scale_boot_item.name=Scale Boots
+item.unitygear:scale_leg_item.name=Scale Leggings
+item.unitygear:scale_chest_item.name=Scale Chestplate
+item.unitygear:scale_helm_item.name=Scale Helmet
+item.unitygear:thief_boot_item.name=Thief Boots
+item.unitygear:thief_leg_item.name=Thief Leggings
+item.unitygear:thief_chest_item.name=Thief Chestplate
+item.unitygear:thief_helm_item.name=Thief Helmet
+item.unitygear:tribal_boot_item.name=Tribal Boots
+item.unitygear:tribal_leg_item.name=Tribal Leggings
+item.unitygear:tribal_chest_item.name=Tribal Chestplate
+item.unitygear:tribal_helm_item.name=Tribal Helmet
 
 itemGroup.unitygear:creative_tab=Unity Gear

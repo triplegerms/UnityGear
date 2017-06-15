@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "unitygear:items/tribal_leg_item"
+  }
+}
+
