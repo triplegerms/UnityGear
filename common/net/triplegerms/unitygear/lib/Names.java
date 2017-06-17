@@ -25,7 +25,7 @@ public class Names {
 	public static final String THIEF_ARMOR = "thief_armor";
 	public static final String TRIBAL_ARMOR = "tribal_armor";
 	public static final String SCALE_ARMOR = "scale_armor";
-
+	
 	public static String unlocal(String name) {
 		return UnityGear.MODID + "." + name;
 	}

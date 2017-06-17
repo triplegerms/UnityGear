@@ -56,6 +56,7 @@ public class ModItems {
 	public static void initRecipes() {
 		uEssence.addRecipes();
 		uDiamond.addRecipes();
+		ArmorRecipe.init();
 	}
 
 	private static Item registerItem(Item item, String name) {
@@ -64,8 +65,8 @@ public class ModItems {
 	}
 
 	@SideOnly(Side.CLIENT)
-	public static void initClient(ItemModelMesher mesher) {
-		ModRender.preInit(mesher);
+	public static void initClient() {
+		ModRender.preInit();
 	}
 
 }

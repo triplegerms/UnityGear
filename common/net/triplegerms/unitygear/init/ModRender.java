@@ -1,5 +1,6 @@
 package net.triplegerms.unitygear.init;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemModelMesher;
 import net.minecraft.client.renderer.block.model.ModelBakery;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -10,7 +11,8 @@ import net.triplegerms.unitygear.lib.Names;
 
 public class ModRender {
 	
-	public static void preInit(ItemModelMesher mesher){
+	public static void preInit(){
+		ItemModelMesher mesher = Minecraft.getMinecraft().getRenderItem().getItemModelMesher();
 		registerItemRenderer(ModItems.uEssence, 0, Names.resName(Names.ESSENCE_ITEM), mesher);
 		registerItemRenderer(ModItems.uDiamond, 0, Names.resName(Names.UNITY_DIAMOND_ITEM), mesher);
 
