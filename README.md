@@ -25,7 +25,7 @@ Each set is crafted using Unity Diamonds, a set of four diamonds bound together 
 
 ## Licence
 
-Unity Gear is licensed under the GPLv3 license. Full license is in [LICENSE](https://github.com/triplegerms/UnityGear/LICENSE).
+Unity Gear is licensed under the GPLv3 license. Full license is in [LICENSE](https://github.com/triplegerms/UnityGear/blob/master/LICENSE).
 
 ## Distribution and Modpacks
 
