@@ -6,12 +6,14 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.triplegerms.unitygear.init.ModItems;
+import net.triplegerms.unitygear.util.Keybind;
 
 public class ClientProxy extends CommonProxy {
 
 	@Override
 	public void preInit(FMLPreInitializationEvent event) {
 		super.preInit(event);
+		Keybind.init();
 	}
 
 	@Override

@@ -10,7 +10,9 @@ import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponentString;
+import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.triplegerms.unitygear.UnityGear;
@@ -20,6 +22,7 @@ public class ArmorBase extends ItemArmor {
 	
 	private ArmorMaterial material;
 	private String realName;
+	public boolean abilityOn;
 	
 	
 	public ArmorBase(String name, ArmorMaterial aMaterial, EntityEquipmentSlot slot){		
@@ -30,6 +33,7 @@ public class ArmorBase extends ItemArmor {
 		setUnlocalizedName(Names.unlocal(name));
 		setRegistryName(UnityGear.MODID, name);
 		GameRegistry.register(this);
+		abilityOn = false;
 	}
 	
 	@Override
@@ -67,6 +71,11 @@ public class ArmorBase extends ItemArmor {
     		   player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 40, 0, false, false));
     		   player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 40, 1, false, false));
     		   
+    		   if(abilityOn)
+    			   player.addPotionEffect(new PotionEffect(Potion.getPotionById(14),10 * 20, 81));
+    		   else
+    			   player.removePotionEffect(Potion.getPotionById(14));
+    		   
     	   }else if(material == ArmorType.armorTribal){
     		   //less buggy looking than MobEffects.NIGHT_VISION
     		   player.addPotionEffect(new PotionEffect(Potion.getPotionById(16), 210, 0, false, false));
@@ -76,5 +85,9 @@ public class ArmorBase extends ItemArmor {
        }
 		
 	}
-
+	
+	public void toggleAbility(){
+		abilityOn = !abilityOn;
+		//player.sendMessage(new TextComponentTranslation(String.valueOf(abilityOn)));
+	}
 }

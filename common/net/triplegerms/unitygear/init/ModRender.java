@@ -44,5 +44,13 @@ public class ModRender {
 		ModelLoader.registerItemVariants(item, model);
 		mesher.register(item, meta, model);
 	}
+	
+/*	public static void thiefInvis(Item item){
+		ItemModelMesher mesher = Minecraft.getMinecraft().getRenderItem().getItemModelMesher();
+		ModelResourceLocation model = new ModelResourceLocation(resName, "inventory");
+		ModelLoader.registerItemVariants(item, model);
+		mesher.register(item, 0, model);
+				
+	}*/
 
 }

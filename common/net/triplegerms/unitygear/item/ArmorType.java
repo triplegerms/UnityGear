@@ -15,17 +15,18 @@ public final class ArmorType {
 	public static void init() {
 		
 		armorThief = addArmorMaterial(Names.THIEF_ARMOR,
-				Names.resName("thief"), 50,
-				new int[] { 5, 8, 9, 4 }, 15,
+				Names.resName("thief"), 30,
+				new int[] { 3, 6, 8, 3 }, 10,
 				SoundEvents.ITEM_ARMOR_EQUIP_GENERIC);
 		
 		armorScale = addArmorMaterial(Names.SCALE_ARMOR,
-				Names.resName("scale"), 120,
-				new int[] { 1, 3, 4, 3 }, 10,
+				Names.resName("scale"), 60,
+				new int[] { 3, 6, 8, 3 }, 10,
 				SoundEvents.ITEM_ARMOR_EQUIP_GENERIC);
 		
 		armorTribal = addArmorMaterial(Names.TRIBAL_ARMOR,
-				Names.resName("tribal"), 20, new int[] { 3, 5, 6, 3 },
+				Names.resName("tribal"), 45, 
+				new int[] { 3, 6, 8, 3 },
 				8, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC);
 	}	
 
